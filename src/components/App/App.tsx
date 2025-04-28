@@ -25,11 +25,11 @@ export default function App() {
 
     const totalPages = data?.total_pages ?? 0;
 
-    // Помилка: handleSearch приймає два параметри, але за вимогами має приймати лише один
+    
     const handleSearch = async (newQuery: string, pageNum: number) => {
         setPage(pageNum);
         setQuery(newQuery);
-        // Помилка: містить логіку запиту, хоча не повинна
+        
         await fetchMovies(newQuery, pageNum);
     };
 
