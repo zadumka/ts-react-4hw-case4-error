@@ -22,6 +22,6 @@ export const fetchMovies = async (
             },
         },
     );
-    // Error: Not returning response.data
+   
     return response;
 };
