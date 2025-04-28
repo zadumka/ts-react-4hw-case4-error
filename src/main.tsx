@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        {/* Помилка: неправильно переданий проп до QueryClientProvider (queryClient замість client) */}
+        
         <QueryClientProvider queryClient={queryClient}>
             <App />
         </QueryClientProvider>
