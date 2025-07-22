@@ -56,8 +56,8 @@ export default function App() {
                     forcePage={page - 1}
                     containerClassName={css.pagination}
                     activeClassName={css.active}
-                    nextLabel=""→""
-                    previousLabel=""←""
+                    nextLabel="→"
+                    previousLabel="←"
                 />
             )}
             {query !== '' && isPending && <Loader />}
